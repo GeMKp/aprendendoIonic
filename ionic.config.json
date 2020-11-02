@@ -1,5 +1,7 @@
 {
   "name": "aprendizagemIonic",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

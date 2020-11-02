@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cidade</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label stacked>Descrição:</ion-label>
+    <ion-input [(ngModel)]="descricao_cidade"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-button (click)="salvar()" color="success" id="btn_salvar">Salvar</ion-button>
+  </ion-item>
+
+  <hr />
+
+  <div *ngFor="let cidade of cidades">
+    <ion-item>
+      <label>Cidade: {{ cidade.Descricao }}</label>
+    </ion-item>
+  </div>
+
+</ion-content>
